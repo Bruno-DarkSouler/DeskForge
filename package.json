@@ -1,0 +1,36 @@
+{
+  "name": "DeskForge",
+  "version": "1.0.0",
+  "description": "Actividad 20 de Disenio de implementacion de sistemas computacionales",
+  "main": "electron/main.js",
+  "scripts": {
+    "dev": "concurrently \"vite\" \"wait-on http://localhost:5173 && electron .\"",
+    "build": "vite build && electron-builder"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "12.6.0",
+      "onFail": "download"
+    }
+  },
+  "packageManager": "pnpm@12.6.0",
+  "type": "module",
+  "devDependencies": {
+    "concurrently": "^10.0.5",
+    "electron": "^44.4.4",
+    "electron-builder": "^26.15.3",
+    "vite": "^8.3.0",
+    "wait-on": "^9.1.0"
+  },
+  "dependencies": {
+    "boolean": "3.2.0",
+    "glob": "7.2.3",
+    "howler": "^2.2.4",
+    "inflight": "1.0.6",
+    "rimraf": "2.6.3"
+  }
+}
